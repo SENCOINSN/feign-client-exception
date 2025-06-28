@@ -1,0 +1,11 @@
+server:
+  error:
+    include-message: always
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://212.227.78.64:8080/realms/micro-auth
