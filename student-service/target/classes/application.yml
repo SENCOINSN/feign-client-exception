@@ -10,8 +10,8 @@ spring:
           keycloak:
             authorization-grant-type: client_credentials
             client-id: micro-auth-app
-            client-secret: ${OAUTH2_KEYCLOAK_CLIENT_SECRET}
+            client-secret: JBVppfIfAAJL7dEIXhnvlxG4m44E2U70
         provider:
           keycloak:
-            token-uri: http://${domain}:8080/realms/micro-auth/protocol/openid-connect/token
+            token-uri: http://212.227.78.64:8080/realms/micro-auth/protocol/openid-connect/token
 
