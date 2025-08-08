@@ -1,0 +1,17 @@
+application:
+  services:
+    course:
+      url: http://localhost:8081/api/courses
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            authorization-grant-type: client_credentials
+            client-id: micro-auth-app
+            client-secret: JBVppfIfAAJL7dEIXhnvlxG4m44E2U70
+        provider:
+          keycloak:
+            token-uri: http://212.227.78.64:8080/realms/micro-auth/protocol/openid-connect/token
+
